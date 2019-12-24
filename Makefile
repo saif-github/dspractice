@@ -31,7 +31,7 @@
    #TARGET = hash_table/hash_c
    #TARGET = hash_table/trivial_hashing
    #TARGET = hash_table/hash_lookups
-  TARGET = hash_table/first_repeated_char_hash
+  #TARGET = hash_table/first_repeated_char_hash
    #TARGET = hash_table/hash_chain_collision_resolution
    #TARGET = sorting_practice/selection_sort
 	#TARGET = sorting_practice/bubble_sort
@@ -43,6 +43,7 @@
   # TARGET = array_qna/search_in_rotated_array
   
   #TARGET = tree/binary_tree/new_tree
+  TARGET = misc/sliding_window
 	
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
