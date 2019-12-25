@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>		//<stdlib.h> contains declaration of malloc() and free()
+#include<stdbool.h>
 
 struct NODE
 {

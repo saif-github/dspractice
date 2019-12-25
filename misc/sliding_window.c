@@ -7,6 +7,11 @@
 
 #include<stdio.h>
 
+/*
+ * w - window size
+ * f - frame size
+ */
+
 int main()
 {
     int w,i,f,frames[50];
