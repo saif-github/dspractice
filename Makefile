@@ -29,7 +29,8 @@
    #TARGET  =  linked_list_practice/reverse_list
    
    #TARGET = hash_table/seperate_chaining
-   TARGET = hash_table/Linear_probing_Open_Addressing
+   #TARGET = hash_table/Linear_probing_Open_Addressing
+   TARGET = hash_table/double_hashing_technique
    #TARGET = hash_table/hash_c
    #TARGET = hash_table/trivial_hashing
    #TARGET = hash_table/hash_lookups

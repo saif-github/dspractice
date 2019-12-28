@@ -8,6 +8,9 @@
 
 /*
  *
+ *Collision Handling/resolving technique in Hashing
+ *
+ *Seperate chaning:
  The idea is to make each cell of hash table point to a linked list of records
  that have same hash function value.
   Algorithm to insert a value in separate chaining

@@ -6,6 +6,8 @@
  */
 
 /*
+ * Collision Handling/resolving technique(open addressing) in Hashing
+ *
  * In Open Addressing, all elements are stored in the hash table itself.
  *  So at any point, size of the table must be greater than or
  *  equal to the total number of keys
@@ -24,7 +26,7 @@ If (hash(x) + 2) % S is also full, then we try (hash(x) + 3) % S
 
 #define TABLE_SIZE 20
 
-int arr[TABLE_SIZE]={};
+int hash[TABLE_SIZE]={};
 int count;
 
 int CalculateHash(int key)
@@ -41,12 +43,12 @@ void Insert(int element)
 
     int probe=CalculateHash(element);
 
-    while(arr[probe]!=NULL && arr[probe]!=-1)
+    while(hash[probe]!=NULL && hash[probe]!=-1)		//elements deleted are marked -1
     {
         probe=(probe+1)%TABLE_SIZE;
     }
 
-    arr[probe]=element;
+    hash[probe]=element;
     count++;
 }
 
@@ -57,9 +59,9 @@ int Search(int element)
         exit(EXIT_FAILURE);
     }
     int probe=CalculateHash(element);
-    while(arr[probe]!=0)
+    while(hash[probe]!=0)
     {
-        if(arr[probe]==element)
+        if(hash[probe]==element)
             return probe;
         probe=(probe+1)%TABLE_SIZE;
     }
@@ -76,7 +78,7 @@ void Delete(int element)
     int loc=Search(element);
     if(loc!=-1)
     {
-        arr[loc]=-1;
+        hash[loc]=-1;
         count--;
     }
 }
@@ -85,7 +87,7 @@ void PrintList()
 {
     int i;
     for(i=0;i<TABLE_SIZE;i++)
-        printf("%d%c",arr[i],' ');
+        printf("%d%c",hash[i],' ');
 }
 
 int main()
@@ -151,3 +153,8 @@ So slots of deleted keys are marked specially as “deleted”.
 
  */
 
+/*
+ * Clustering: The main problem with linear probing is clustering,
+ * many consecutive elements form groups
+ * and it starts taking time to find a free slot or to search an element.
+ */
