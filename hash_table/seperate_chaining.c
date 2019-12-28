@@ -7,6 +7,9 @@
 
 
 /*
+ *
+ The idea is to make each cell of hash table point to a linked list of records
+ that have same hash function value.
   Algorithm to insert a value in separate chaining
 Hashtable is an array of pointers. All pointers are initialized to NULL  ( head[ TABLE_SIZE] = NULL)
 Step1: Read the value to be inserted
@@ -23,6 +26,8 @@ step 6: else
 #include <stdlib.h>
 
 #define TABLE_SIZE 10
+//#define NULL (void *)0
+
 struct node
 {
                int data;
@@ -81,8 +86,8 @@ void display()
            printf("\nentries at index %d\n",i);
                if(head[i] == NULL)
                {
-               printf("No Hash Entry");
-               return;
+            	   	   printf("No Hash Entry");
+
                }
                else
                {
@@ -90,8 +95,9 @@ void display()
                               printf("%d->",c->data);
                }
           }
-
+    return;
 }
+
 int main(void)
 {
     int opt;
