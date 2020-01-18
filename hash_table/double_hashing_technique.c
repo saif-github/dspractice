@@ -14,6 +14,9 @@
     It avoids hash collision (two or more data with same hash value).
  *
  *
+ ***Double hashing is a probing method that probes according to a
+ * constant multiples another hash functions
+ *
  *  Double hashing can be done using :
     (hash1(key) + i * hash2(key)) % TABLE_SIZE
     Here hash1() and hash2() are hash functions and TABLE_SIZE
@@ -134,6 +137,8 @@
         char name[100];
         printf("Enter the no of elements:");
         scanf("%d", &tableSz);
+
+        //check to take table
         while (1) {
                 for (i = 2; i < tableSz; i++) {
                         if (tableSz % i == 0) {
@@ -189,3 +194,10 @@
         }
         return 0;
   }
+
+/*
+  A good second Hash function is:
+
+      It must never evaluate to zero
+      Must make sure that all cells can be probed
+*/

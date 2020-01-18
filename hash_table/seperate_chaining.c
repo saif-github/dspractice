@@ -40,7 +40,7 @@ struct node *head[TABLE_SIZE]={NULL},*c;
 void insert()
 {
     int i,key;
-    printf("\nenter a value to insert into hash table\n");
+    printf("\n enter a value to insert into hash table\n");
     scanf("%d",&key);
     i=key%TABLE_SIZE;
     struct node * newnode=(struct node *)malloc(sizeof(struct node));
@@ -124,9 +124,10 @@ int main(void)
         }
     }
 }
+
 /*
 Algorithm to search a value in separate chaining
-Hashtable is an array of pointers. All pointers are initialized to NULL  ( head[ TABLE_SIZE] = NULL)
+Hash table is an array of pointers. All pointers are initialized to NULL  ( head[ TABLE_SIZE] = NULL)
 Step1: Read the value to be searched
 step 2: compute the index
                                        index = value % TABLE_SIZE
@@ -136,6 +137,4 @@ step 6: else
                                        step 6.2 : if value is equal to data in c then print “search element found” and STOP
                                        step 6.3: else move c to next node ( c = c->next)  and if c != NULL go to step 6.2
 step 7: if search element is not found in entire linked list (c is NULL) then print “ search element not found”
-
-
 */
