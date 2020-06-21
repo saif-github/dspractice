@@ -14,7 +14,7 @@
   #TARGET = linked_list_practice/circular_linkedlist
   #TARGET = linked_list_practice/segregate_even_odd
   #TARGET = linked_list_practice/merge_sort_linkedlist
-    TARGET = linked_list_practice/Xor_linked_list
+    #TARGET = linked_list_practice/Xor_linked_list
   #TARGET = stack_practice/queue_using_stacks
   #TARGET = stack_practice/stack_1
   #TARGET = queues_practice/Queue_1
@@ -33,10 +33,12 @@
    #TARGET = hash_table/Linear_probing_Open_Addressing
    #TARGET = hash_table/double_hashing_technique
    #TARGET = hash_table/hash_c
-   #TARGET = hash_table/trivial_hashing
+   TARGET = hash_table/trivial_hashing
    #TARGET = hash_table/hash_lookups
   #TARGET = hash_table/first_repeated_char_hash
    #TARGET = hash_table/hash_chain_collision_resolution
+   
+   
    #TARGET = sorting_practice/selection_sort
 	#TARGET = sorting_practice/bubble_sort
 	#TARGET = sorting_practice/insertion_sort

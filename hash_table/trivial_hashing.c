@@ -31,7 +31,7 @@ If hash[X][1] is one then the number is present
 
 #include <stdio.h>
 #include <stdbool.h>
-#incl9ude <stdlib.h>
+#include <stdlib.h>
 
 #define MAX 1000
 
