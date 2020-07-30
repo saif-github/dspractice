@@ -51,8 +51,9 @@
   #TARGET = tree/binary_tree/new_tree
   #TARGET = misc/sliding_window
 
-  TARGET = graph/bipartite_graph_check
-
+  #TARGET = graph/bipartite_graph_check
+  TARGET = graph/bipartite_nonconnected_graphs
+	
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
 
