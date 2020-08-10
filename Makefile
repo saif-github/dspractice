@@ -50,6 +50,7 @@
 
   #TARGET = tree/binary_tree/new_tree
   #TARGET = misc/sliding_window
+	#TARGET = misc/vector
 
   #TARGET = graph/bipartite_graph_check
   #TARGET = graph/bipartite_nonconnected_graphs
@@ -59,7 +60,9 @@
 	#TARGET = Matrix/matrix_subtraction
 	#TARGET = Matrix/scalar_multiplication
 	#TARGET = Matrix/matrix_transpose
-	TARGET = Matrix/matrix_multiplication
+	#TARGET = Matrix/matrix_multiplication
+	#TARGET = Matrix/matrix_elimination
+	TARGET = Matrix/sparse_representation
 
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
