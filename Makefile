@@ -62,9 +62,9 @@
 	#TARGET = Matrix/scalar_multiplication
 	#TARGET = Matrix/matrix_transpose
 	#TARGET = Matrix/matrix_multiplication
-	#TARGET = Matrix/matrix_elimination
+	TARGET = Matrix/matrix_elimination
 	#TARGET = Matrix/sparse_representation
-	TARGET = Matrix/gauss_elimination
+	#TARGET = Matrix/gauss_elimination
 
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c

@@ -126,6 +126,11 @@ int main()
     // Order of Matrix(n)
     int n = 3, flag = 0;
 
+    // Printing Final Matrix
+    printf("Input Matrix is : \n");
+
+    PrintMatrix(a, n);
+
     // Performing Matrix transformation
     flag = PerformOperation(a, n);
 
