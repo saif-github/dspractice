@@ -55,6 +55,7 @@
   #TARGET = graph/bipartite_graph_check
   #TARGET = graph/bipartite_nonconnected_graphs
 	#TARGET = graph/bipartite_matching
+	#TARGET = graph/directed_graph
 
 	#TARGET = Matrix/matrix_addition
 	#TARGET = Matrix/matrix_subtraction
@@ -62,7 +63,8 @@
 	#TARGET = Matrix/matrix_transpose
 	#TARGET = Matrix/matrix_multiplication
 	#TARGET = Matrix/matrix_elimination
-	TARGET = Matrix/sparse_representation
+	#TARGET = Matrix/sparse_representation
+	TARGET = Matrix/gauss_elimination
 
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
