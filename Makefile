@@ -30,8 +30,9 @@
   #TARGET  =  linked_list_practice/reverse_list
 	#TARGET  =  linked_list_practice/swap_nodes_in_linkedlist
 	#TARGET  =  linked_list_practice/remove_duplicates_sorted_LL
-	TARGET  =  linked_list_practice/remove_duplicates_unsorted_LL
-
+	#TARGET  =  linked_list_practice/remove_duplicates_unsorted_LL
+	TARGET  =  linked_list_practice/skipMdeleteNnodes
+	
   #TARGET = hash_table/seperate_chaining
   #TARGET = hash_table/Linear_probing_Open_Addressing
   #TARGET = hash_table/double_hashing_technique
