@@ -33,7 +33,9 @@
 	#TARGET  =  linked_list_practice/remove_duplicates_unsorted_LL
 	#TARGET  =  linked_list_practice/skipMdeleteNnodes
 	#TARGET  =  linked_list_practice/intersection_point_of_LL
-	TARGET  =  linked_list_practice/lenght_of_loop_in_LL
+	#TARGET  =  linked_list_practice/lenght_of_loop_in_LL
+	#TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL
+	TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL_2
 
   #TARGET = hash_table/seperate_chaining
   #TARGET = hash_table/Linear_probing_Open_Addressing
