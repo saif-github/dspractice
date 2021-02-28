@@ -36,7 +36,8 @@
 	#TARGET  =  linked_list_practice/lenght_of_loop_in_LL
 	#TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL
 	#TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL_2
-	TARGET  =  linked_list_practice/sorted_merge_two_LL
+	#TARGET  =  linked_list_practice/sorted_merge_two_LL
+	TARGET  = linked_list_practice/deleate_current_node_in_LL
 
   #TARGET = hash_table/seperate_chaining
   #TARGET = hash_table/Linear_probing_Open_Addressing

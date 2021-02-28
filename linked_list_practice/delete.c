@@ -1,4 +1,4 @@
-//Sunday 24 June 2018 01:34:00  IST 
+//Sunday 24 June 2018 01:34:00  IST
 
 #include <stdio.h>
 #include <stdlib.h>		//<stdlib.h> contains declaration of malloc() and free()
@@ -21,7 +21,7 @@ void traverse(struct NODE* node)
 	}
 }
 
-/* Given a reference (pointer to pointer) to the head of a list and 
+/* Given a reference (pointer to pointer) to the head of a list and
    an int, inserts a new node on the front of the list. */
 void front(struct NODE** head_ref, int new_data)
 {
@@ -41,21 +41,21 @@ void front(struct NODE** head_ref, int new_data)
 void insertAfter(struct NODE* prev_node, int new_data)
 {
     /*1. check if the given prev_node is NULL */
-    if (prev_node == NULL) 
-    { 
-       printf("the given previous node cannot be NULL");       
-       return;  
-    }  
-          
+    if (prev_node == NULL)
+    {
+       printf("the given previous node cannot be NULL");
+       return;
+    }
+
     /* 2. allocate new node */
     struct NODE* new_node =(struct NODE*) malloc(sizeof(struct NODE));
-  
+
     /* 3. put in the data  */
     new_node->g_value  = new_data;
-  
+
     /* 4. Make next of new node as next of prev_node */
-    new_node->next = prev_node->next; 
-  
+    new_node->next = prev_node->next;
+
     /* 5. move the next of prev_node as new_node */
     prev_node->next = new_node;
 }
@@ -66,16 +66,16 @@ void append(struct NODE** head_ref, int new_data)
 {
     /*  allocate new node */
     struct NODE* new_node = (struct NODE*) malloc(sizeof(struct NODE));
- 
-    struct NODE *last = *head_ref;  
- 
+
+    struct NODE *last = *head_ref;
+
     new_node->g_value  = new_data;
     new_node->next = NULL;
- 
+
     /*  Else traverse till the last node */
     while (last->next != NULL)
         last = last->next;
- 
+
     /*  Change the next of last node */
     last->next = new_node;
     return;
@@ -85,7 +85,7 @@ void deleteNode(struct NODE **head_ref, int key)
 {
     // Store head node
     struct NODE* temp = *head_ref, *prev;
- 
+
     // If head node itself holds the key to be deleted
     if (temp != NULL && temp->g_value == key)
     {
@@ -101,13 +101,13 @@ void deleteNode(struct NODE **head_ref, int key)
         prev = temp;
         temp = temp->next;
     }
- 
+
     // If key was not present in linked list
     if (temp == NULL) return;
- 
+
     // Unlink the node from linked list
     prev->next = temp->next;
- 
+
     free(temp);  // Free memory
 }
 
@@ -117,14 +117,14 @@ void deleteList(struct NODE** head_ref)
    /* deref head_ref to get the real head */
    struct NODE* current = *head_ref;
    struct NODE* next;
- 
-   while (current != NULL) 
+
+   while (current != NULL)
    {
        next = current->next;
        free(current);
        current = next;
    }
-   
+
    /* deref head_ref to affect the real head back
       in the caller. */
    *head_ref = NULL;
@@ -138,8 +138,8 @@ int main(void)
 	struct NODE *second=NULL;
 	struct NODE *third=NULL;
 
-  	// allocate 3 nodes in the heap  
-	head = (struct NODE*)malloc(sizeof(struct NODE)); 
+  	// allocate 3 nodes in the heap
+	head = (struct NODE*)malloc(sizeof(struct NODE));
 	second = (struct NODE*)malloc(sizeof(struct NODE));
 	third = (struct NODE*)malloc(sizeof(struct NODE));
 
@@ -152,7 +152,7 @@ int main(void)
 
 	head->next=second;
 	second->next=third;
-	third->next=NULL;	
+	third->next=NULL;
 
 	printf("\nnodes values\n");
 
@@ -175,16 +175,3 @@ int main(void)
 	traverse(head);
 return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
