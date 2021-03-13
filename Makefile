@@ -15,18 +15,10 @@
   #TARGET = linked_list_practice/segregate_even_odd
   #TARGET = linked_list_practice/merge_sort_linkedlist
   #TARGET = linked_list_practice/Xor_linked_list
-  #TARGET = stack_practice/queue_using_stacks
-  #TARGET = stack_practice/stack_1
-  #TARGET = queues_practice/Queue_1
-  #TARGET = queues_practice/queue_using_ll
-  #TARGET = queues_practice/priority_queue
   #TARGET = linked_list_practice/linked_list_lenght
   #TARGET = linked_list_practice/search_linked_list
   #TARGET = linked_list_practice/get_node_index
-  #TARGET = stack_practice/array_stack
-  #TARGET = stack_practice/stack_lnklst
-  #TARGET  = detect_loop_in_lnk
-  #TARGET  =  stack_practice/reverse_string
+	#TARGET  = detect_loop_in_lnk
   #TARGET  =  linked_list_practice/reverse_list
 	#TARGET  =  linked_list_practice/swap_nodes_in_linkedlist
 	#TARGET  =  linked_list_practice/remove_duplicates_sorted_LL
@@ -37,7 +29,18 @@
 	#TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL
 	#TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL_2
 	#TARGET  =  linked_list_practice/sorted_merge_two_LL
-	TARGET  = linked_list_practice/deleate_current_node_in_LL
+	#TARGET  =  linked_list_practice/deleate_current_node_in_LL
+
+	#TARGET = queues_practice/Queue_1
+  #TARGET = queues_practice/queue_using_ll
+  #TARGET = queues_practice/priority_queue
+
+  #TARGET = stack_practice/reverse_string
+	#TARGET = stack_practice/queue_using_stacks
+  #TARGET = stack_practice/stack_1
+  #TARGET = stack_practice/array_stack
+  #TARGET = stack_practice/stack_lnklst
+	TARGET = stack_practice/balancing_of_symbols
 
   #TARGET = hash_table/seperate_chaining
   #TARGET = hash_table/Linear_probing_Open_Addressing
@@ -56,7 +59,7 @@
 	#TARGET = sorting_practice/quick_sort
 	#TARGET = searching_practice/linear_search
 	#TARGET = searching_practice/binary_search
-  # TARGET = array_qna/search_in_rotated_array
+  #TARGET = array_qna/search_in_rotated_array
 
   #TARGET = tree/binary_tree/new_tree
   #TARGET = misc/sliding_window
