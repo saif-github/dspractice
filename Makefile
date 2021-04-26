@@ -30,6 +30,8 @@
 	#TARGET  =  linked_list_practice/find_nth_node_from_end_of_LL_2
 	#TARGET  =  linked_list_practice/sorted_merge_two_LL
 	#TARGET  =  linked_list_practice/deleate_current_node_in_LL
+	#TARGET  =  linked_list_practice/clone_linked_list
+
 
 	#TARGET = queues_practice/Queue_1
   #TARGET = queues_practice/queue_using_ll
@@ -40,7 +42,7 @@
   #TARGET = stack_practice/stack_1
   #TARGET = stack_practice/array_stack
   #TARGET = stack_practice/stack_lnklst
-	TARGET = stack_practice/balancing_of_symbols
+	#TARGET = stack_practice/balancing_of_symbols
 
   #TARGET = hash_table/seperate_chaining
   #TARGET = hash_table/Linear_probing_Open_Addressing
@@ -57,6 +59,8 @@
 	#TARGET = sorting_practice/insertion_sort
 	#TARGET = sorting_practice/merge_sort
 	#TARGET = sorting_practice/quick_sort
+	#TARGET  = sorting_practice/quick_sort_iterative
+	TARGET  = sorting_practice/merge_sort_iterative
 	#TARGET = searching_practice/linear_search
 	#TARGET = searching_practice/binary_search
   #TARGET = array_qna/search_in_rotated_array

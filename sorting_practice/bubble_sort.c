@@ -3,6 +3,15 @@
  *
  *  Created on: 24-May-2019
  *      Author: saifullab
+Algorithm	-->Time Complexity(Worst case)
+Selection Sort		O(n^2)
+Bubble Sort		    O(n^2)
+Insertion Sort	  O(n^2)
+Heap Sort		      O(n log(n))
+Quick Sort		    O(n^2)
+Merge Sort	      O(n log(n))
+Bucket Sort		    O(n^2)
+Radix Sort	      O(nk)
  */
 
 
