@@ -36,6 +36,7 @@
 	#TARGET = queues_practice/Queue_1
   #TARGET = queues_practice/queue_using_ll
   #TARGET = queues_practice/priority_queue
+	TARGET  = queues_practice/reverse_queue
 
   #TARGET = stack_practice/reverse_string
 	#TARGET = stack_practice/queue_using_stacks
@@ -60,7 +61,7 @@
 	#TARGET = sorting_practice/merge_sort
 	#TARGET = sorting_practice/quick_sort
 	#TARGET  = sorting_practice/quick_sort_iterative
-	TARGET  = sorting_practice/merge_sort_iterative
+	#TARGET  = sorting_practice/merge_sort_iterative
 	#TARGET = searching_practice/linear_search
 	#TARGET = searching_practice/binary_search
   #TARGET = array_qna/search_in_rotated_array
