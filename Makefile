@@ -36,7 +36,7 @@
 	#TARGET = queues_practice/Queue_1
   #TARGET = queues_practice/queue_using_ll
   #TARGET = queues_practice/priority_queue
-	TARGET  = queues_practice/reverse_queue
+	#TARGET  = queues_practice/reverse_queue
 
   #TARGET = stack_practice/reverse_string
 	#TARGET = stack_practice/queue_using_stacks
@@ -84,6 +84,8 @@
 	#TARGET = Matrix/sparse_representation
 	#TARGET = Matrix/gauss_elimination
 	#TARGET = Matrix/LU_decomposition
+
+	TARGET = ds_application/LRU_Cache
 
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
