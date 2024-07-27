@@ -6,7 +6,9 @@ then,
     if(node->next==NULL){} //in c or cpp
     if(node.next==null){} // in java
 
-This statement is used to check whether the current node in the linked list is last node or not . i.e. to check whether the element or node is last in the list .(when to traverse the whole list and to find the last node or say element)
+This statement is used to check whether the current node in the linked list is last node or not .
+ i.e. to check whether the element or node is last in the list .
+(when to traverse the whole list and to find the last node or say element)
 
     if(node ==NULL or null){};
     //in c,cpp- NULL and in java null

@@ -1,7 +1,7 @@
 /*
 Find	n th 	node	from	the	end	of	a	Linked	List.
 
-Using lenght ogf linked list approach :
+Using lenght of linked list approach :
 
 We can	find	the	length	of	the	linked	list	just	by	starting	at	the	head	node	and	traversing	the	list.
 say M is the lenght of linked list we got by traversing.
