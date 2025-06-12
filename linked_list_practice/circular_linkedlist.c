@@ -1,3 +1,44 @@
+/*
+Operation	: Circular linked list 
+
+Description : Circular limkedlist do not have ends.
+			while traversing the linked list we should be carefull; 
+			otherwise we will be traversing the list infinitely.abort
+
+Function : Insert a node in Circular linked list , count number of nodes in Circular linked list.
+
+
+Uing Gdb : Problem statement 
+
+(gdb) 
+insert_at_begining (head_ref=0x7fffffffdbc0, data=5) at circular_linkedlist.c:26
+26	  struct NODE *new_node = (struct NODE *)malloc(sizeof(struct NODE));	//new node to be added
+(gdb) 
+__GI___libc_malloc (bytes=16) at malloc.c:2909
+
+When GDB stops at the foo call, the step (s) command will step into std library function. 
+While you can execute finish (fin) and then execute s again,it's time-consuming and distracting, 
+especially when dealing with complex argument expressions. 
+
+You can also ask GDB to ignore certain functions while stepping with the skip command
+
+for skipping all the standard library files use below cmd
+skip -gfi /usr/include/ 
+
+skip delete -- Delete skip entries
+skip disable -- Disable skip entries
+skip enable -- Enable skip entries
+skip file -- Ignore a file while stepping
+skip function -- Ignore a function while stepping
+info skip
+
+for Profiling the program:
+gcc -g -pg -o0 circular_linkedlist.c -o exe
+./exe
+gprof exe > profile.txt
+
+*/
+
 //Tue Jun 26 21:59:47 IST 2018
 
 #include <stdio.h>
