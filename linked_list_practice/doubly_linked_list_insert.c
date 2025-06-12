@@ -69,7 +69,7 @@ int main(void)
 	second = (struct DNode*)malloc(sizeof(struct DNode));
 	third = (struct DNode*)malloc(sizeof(struct DNode));
 
-	printf("insert new node at (1)front (2)after second node (3)append\n");
+	printf("insert new node at (1) begining of node (2)Intermediate Node (3)append node at the end\n");
 	scanf("%d",&opt);
 
 	head->data=1;
