@@ -45,16 +45,35 @@ gprof exe > profile.txt
 #include <stdlib.h>		//<stdlib.h> contains declaration of malloc() and free()
 #include<stdbool.h>
 
-struct NODE
+struct CNode
 {
 int g_value;
-struct NODE *next;
+struct  CNode *next;
 };
 
-void insert_at_begining(struct NODE** head_ref,int data)
+void insert_at_end(struct CNode** head_ref,int data)
 {
-  struct NODE *new_node = (struct NODE *)malloc(sizeof(struct NODE));	//new node to be added
-	struct NODE *temp=*head_ref;	//temporary node use to get end point
+	struct CNode *new_node = (struct CNode *)malloc(sizeof(struct CNode));	//new node to be added
+	struct CNode *temp=*head_ref;	//temporary node use to get end point
+
+	new_node->g_value=data;
+	new_node->next=*head_ref;
+
+	if(*head_ref!=NULL){	//if already nodes are on list
+
+		while(temp->next!=*head_ref)
+			temp=temp->next;
+		temp->next=new_node;
+	}
+	else{			//if list is empty
+		new_node->next=new_node;
+	}
+}
+
+void insert_at_begining(struct CNode** head_ref,int data)
+{
+	struct CNode *new_node = (struct CNode *)malloc(sizeof(struct CNode));	//new node to be added
+	struct CNode *temp=*head_ref;	//temporary node use to get end point
 
 	new_node->g_value=data;
 	new_node->next=*head_ref;
@@ -71,13 +90,30 @@ void insert_at_begining(struct NODE** head_ref,int data)
 	*head_ref=new_node;
 }
 
-void print_list(struct NODE* head)
+
+int CL_lenght(struct CNode *head)
 {
-	struct NODE *temp=head;
+	struct CNode *current = head;
+	int count = 0;
+
+	if(head == NULL)
+		return 0;
+
+	do{
+		current = current->next;
+		count++;
+	}while(current != head);
+
+	return count;
+}
+
+void print_list(struct CNode* head)
+{
+	struct CNode *temp=head;
 
 	if(head!=NULL){
 		do{
-			printf("%d \t",temp->g_value);
+			printf("Node - %d \t",temp->g_value);
 			temp=temp->next;
 		}while(temp!=head);
 	}
@@ -85,7 +121,7 @@ void print_list(struct NODE* head)
 
 int main(void)
 {
-	struct NODE *head=NULL;
+	struct CNode *head=NULL;
 
 	insert_at_begining(&head,5);
 	insert_at_begining(&head,1);
@@ -95,10 +131,19 @@ int main(void)
 
 	print_list(head);
 
-	printf("\n");
+	insert_at_end(&head,6);
+	insert_at_end(&head,7);
+	insert_at_end(&head,8);
+	insert_at_end(&head,9);
+	insert_at_end(&head,10);
 
 	print_list(head);
 
 	printf("\n");
+
+	printf("Circular linked list node count %d \t",CL_lenght(head));
+	
+	printf("\n");
+
 return 0;
 }
